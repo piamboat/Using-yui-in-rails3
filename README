@@ -1,0 +1,29 @@
+Show the example of how to using YUI library in rails 3
+#######################################################
+Please download yui library ==> http://yuilibrary.com/download/yui3/ (in yui library folder, which you download
+will has yui-min.js(/build/yui/yui-min.js)) 
+
+
+1. In app/assets (add jquery and rails.js)
+      |
+      |_ javascripts
+      |     |
+      |     |_ jquery.js // version need to be > 1.6
+      |     |
+      |     |_ rails.js 
+      |     |
+      |     |_ yui-min.js
+      |
+      |_ stylesheets
+            |
+            |_ application.css (add css)
+
+
+2. Create action creat_graph.haml in Graphs_controller.rb 
+
+Remarkable: To use params in javascript for haml ==> #{escape_javascript(params[:your_params])}"
+
+for more information about yui please visit http://yuilibrary.com/yui/docs/charts/charts-multiseries.html
+#######################################################
+
+Thank you YUI for make developper like us be able to generate the graph easier.***
